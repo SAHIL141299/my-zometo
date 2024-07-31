@@ -1,0 +1,30 @@
+.high-res-image {
+  width: 100vw;
+  height: 56vh;
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+  top: 7rem;
+  left: 44rem;
+}
+.Zometo {
+  width: 18vw;
+  color: white;
+}
+.sloggen {
+  margin-top: 2rem;
+  color: white;
+  font-size: 3.6rem;
+  position: relative;
+  right: 17rem;
+}
+
