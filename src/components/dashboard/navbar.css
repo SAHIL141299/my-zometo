@@ -1,0 +1,40 @@
+.navbar-header {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  position: static;
+  height: 7.2rem;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  top: 0px;
+  transition: opacity 0.25s linear,
+  height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
+  background-color: transparent;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 110rem;
+  padding-right: 13rem;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+}
+
+.navbar-img {
+  max-width: 12rem;
+  height: 2rem;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 2rem;
+}

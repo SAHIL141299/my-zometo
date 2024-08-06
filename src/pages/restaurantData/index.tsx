@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchRestaurantsRequest } from "../../redux/actions/restaurantActions";
 import "./restaurantData.css";
-import Navbar from '../../components/deshboard/index'
+import Navbar from '../../components/dashboard/index'
+import SearchBar from "../../components/findLocation/Index";
 
 interface Item {
   name: string;
@@ -27,6 +28,7 @@ interface data {
 
 const RestaurantDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const [city, setCity] = useState<string>(" ");
   const dispatch = useDispatch();
 
   const restaurantData = useSelector(
@@ -43,7 +45,8 @@ const RestaurantDetail: React.FC = () => {
 
   return (
     <>
-    <Navbar />       
+     <SearchBar city={city} setCity={setCity} />       
+     <Navbar />
       <div className="restaurant-detail">
         {restaurant ? (
           <div className="restaurant-detail-container">
