@@ -1,5 +1,5 @@
 
-import { FETCH_SEARCH_REQUEST, FETCH_SEARCH_SUCCESS, FETCH_SEARCH_FAILURE } from '../actions/actionTypes';
+import { FETCH_SEARCH_REQUEST, FETCH_SEARCH_SUCCESS, FETCH_SEARCH_FAILURE } from '../actionTypes';
 
 interface SearchState {
   data: any[];

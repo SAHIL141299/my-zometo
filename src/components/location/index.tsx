@@ -1,5 +1,5 @@
-import React from 'react';
-import { Crosshair } from 'react-bootstrap-icons';
+import React from "react";
+import { Crosshair } from "react-bootstrap-icons";
 
 interface LocationProps {
   setCity: React.Dispatch<React.SetStateAction<string>>;
@@ -7,7 +7,7 @@ interface LocationProps {
 
 const Location: React.FC<LocationProps> = ({ setCity }) => {
   const handleLocationClick = () => {
-    setCity('Ahmedabad'); // Example, replace with actual logic
+    setCity("Ahmedabad");
   };
 
   return (

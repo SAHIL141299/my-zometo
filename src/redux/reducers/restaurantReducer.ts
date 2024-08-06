@@ -1,5 +1,5 @@
 
-import { FETCH_RESTAURANTS_REQUEST, FETCH_RESTAURANTS_SUCCESS, FETCH_RESTAURANTS_FAILURE } from '../actions/actionTypes';
+import { FETCH_RESTAURANTS_REQUEST, FETCH_RESTAURANTS_SUCCESS, FETCH_RESTAURANTS_FAILURE } from '../actionTypes';
 
 interface RestaurantState {
   data: any[];
@@ -14,6 +14,7 @@ const initialState: RestaurantState = {
 };
 
 export default function restaurantReducer(state = initialState, action: any) {
+  
   switch (action.type) {
     case FETCH_RESTAURANTS_REQUEST:
       return { ...state, loading: true, error: null };
@@ -25,3 +26,6 @@ export default function restaurantReducer(state = initialState, action: any) {
       return state;
   }
 }
+
+
+

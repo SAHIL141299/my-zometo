@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import dashboardBackgroud from '../../assets/images/deshboarBackground.avif';
-import ZometoText from '../../assets/images/Zometologo.avif';
-import './home.css';
-import SearchBar from '../../components/search-location/Index'; // Adjust the path as needed
+import React, { useState } from "react";
+import dashboardBackgroud from "../../assets/images/deshboarBackground.avif";
+import ZometoText from "../../assets/images/Zometologo.avif";
+import "./home.css";
+import SearchBar from "../../components/findLocation/Index";
 
-const Index: React.FC = () => {
-  const [city, setCity] = useState<string>('');
+const Home: React.FC = () => {
+  const [city, setCity] = useState<string>("");
 
   return (
     <div>
@@ -30,4 +30,4 @@ const Index: React.FC = () => {
   );
 };
 
-export default Index;
+export default Home;

@@ -4,11 +4,10 @@ import restaurantReducer from './restaurantReducer';
 import searchReducer from './searchReducer';
 
 
-const rootReducer = combineReducers({
+const rootReducer = combineReducers<any>({
   restaurant: restaurantReducer,
   search: searchReducer,
 });
 
 export default rootReducer;
 
-export type RootState = ReturnType<typeof rootReducer>;
