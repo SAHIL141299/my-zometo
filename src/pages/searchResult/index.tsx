@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../../components/dashboard/index";
+import Navbar from "../../components/deshboard/index";
 import {
   FilterButtonContainer,
   filtercontainer,

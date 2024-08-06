@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import CustomCard from "../customCard/index";
 import { suggestionCard, suggestionCardImage } from "../../utils/styles/searchSuggestions";
+import SuggestionCards from "../suggestionCard/index";
 
 interface Suggestion {
   id: string;
@@ -9,6 +9,8 @@ interface Suggestion {
   restaurantName: string;
   rating: string;
   style: React.CSSProperties;
+  categories?: string[];
+  foodType?: string;
 }
 
 interface SearchSuggestionProps {
@@ -25,13 +27,14 @@ const SearchSuggestion: React.FC<SearchSuggestionProps> = ({ suggestionsData }) 
       style={suggestionCard()}
     >
       {suggestions.map((suggestion) => (
-        <CustomCard
+        <SuggestionCards
           key={suggestion.id}
           id={suggestion.id}
           image={suggestion.image}
-          style={suggestionCardImage()}
           title={suggestion.restaurantName}
           description={suggestion.rating}
+          categories={suggestion.categories}
+          foodType={suggestion.foodType}
           linkTo="/search"
         />
       ))}

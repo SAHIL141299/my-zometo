@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchRestaurantsRequest } from "../../redux/actions/restaurantActions";
 import "./restaurantData.css";
-import Navbar from '../../components/dashboard/index'
+import Navbar from '../../components/deshboard/index'
 
 interface Item {
   name: string;
@@ -27,7 +27,6 @@ interface data {
 
 const RestaurantDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const [city, setCity] = useState<string>('');
   const dispatch = useDispatch();
 
   const restaurantData = useSelector(

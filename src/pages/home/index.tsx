@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       />
       <div className="content-wrapper">
         <div>
-          <img src={ZometoText} alt="Zometo Logo" className="Zometo" />
+          <img src={ZometoText} alt="Zometo Logo" className="Zometo" loading="lazy" />
         </div>
         <div className="sloggen">
           <h1>Discover the best food & drinks in {city}</h1>

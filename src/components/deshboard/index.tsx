@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import zometoimage from "../../assets/images/zometoimage.avif";
+import zometoimage from "../../assets/images/Zometologo.avif";
 import "./navbar.css";
 import SearchBar from "../findLocation/Index";
 

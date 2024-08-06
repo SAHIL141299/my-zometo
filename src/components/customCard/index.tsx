@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { NavLink } from "react-router-dom";
+import './restaurantCard.css';
 
 interface CustomCardProps {
   id: string | number;
@@ -11,6 +12,7 @@ interface CustomCardProps {
   foodType?: string;
   linkTo: string;
   style?: React.CSSProperties ;
+ 
 }
 
 
@@ -27,8 +29,8 @@ const CustomCard: React.FC<CustomCardProps> = ({
   return (
     <NavLink to={linkTo} key={id} className="custom-card-link">
       <Card className="custom-card">
-        <Card.Img variant="top" src={image}  style={style}/>
-        <Card.Body>
+        <Card.Img variant="top" src={image} loading="lazy"  />
+        <Card.Body className="card-body">
           <Card.Title className="left-align">{title}</Card.Title>
           <Card.Text className="left-align">{description}</Card.Text>
           {categories && (
