@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { fetchRestaurantsRequest } from "../../redux/actions/restaurantActions";
-import "./restaurantData.css";
-import Navbar from '../../components/dashboard/index'
-import SearchBar from "../../components/findLocation/Index";
+import { fetchRestaurantsRequest } from "../../Redux/Actions/RestaurantActions";
+import { Navbar } from "../../Components/ComponentIndex";
+import "./RestaurantData.css";
 
 interface Item {
   name: string;
@@ -45,8 +44,7 @@ const RestaurantDetail: React.FC = () => {
 
   return (
     <>
-     <SearchBar city={city} setCity={setCity} />       
-     <Navbar />
+      <Navbar />
       <div className="restaurant-detail">
         {restaurant ? (
           <div className="restaurant-detail-container">

@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { NavLink } from "react-router-dom";
-import './suggestionCard.css'; 
+import './SuggestionCard.css'; 
 
 interface SuggestionCardProps {
   id: string;

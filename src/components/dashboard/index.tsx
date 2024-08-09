@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import zometoimage from "../../assets/images/zometoimage.avif";
-import "./navbar.css";
-import SearchBar from "../findLocation/Index";
+import zometoimage from "../../Assets/Images/zometoimage.avif";
+import "./Dashboard.css";
+import { SearchBar } from "../ComponentIndex";
 
 const Deshboard: React.FC = () => {
   const [city, setCity] = useState<string>(" ");
@@ -16,7 +16,7 @@ const Deshboard: React.FC = () => {
           </div>
         </nav>
       </header>
-      </>
+    </>
   );
 };
 

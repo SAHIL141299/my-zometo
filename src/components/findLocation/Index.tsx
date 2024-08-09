@@ -1,11 +1,9 @@
 import React, { ChangeEvent, FC, useEffect, useRef, useState } from "react";
 import { GeoAltFill, ChevronDown, Search } from "react-bootstrap-icons";
 import { useDispatch } from "react-redux";
-import { searchRequest } from "../../redux/actions/searchActions";
-import Location from "../location";
-import SearchSuggestion from "../searchSuggestion/index";
-import Input from "../customInput/index"; 
-import "./searchbar.css";
+import { searchRequest } from "../../Redux/Actions/SearchActions";
+import { Input, SearchSuggestion, Location } from "../ComponentIndex";
+import "./SearchBar.css";
 
 interface SearchBarProps {
   city: string;
@@ -65,14 +63,14 @@ const SearchBar: FC<SearchBarProps> = ({ city, setCity }) => {
   return (
     <div className="searchbar-wrapper">
       <div
-        className="searchlocation"
+        className="search-location"
         onClick={toggleLocationCard}
         ref={locationRef}
       >
         <GeoAltFill className="location-icon" />
         <Input
           placeholder="Search"
-          className="searchinput"
+          className="search-input"
           value={city}
           onChange={handleCityInputChange}
         />
@@ -84,7 +82,7 @@ const SearchBar: FC<SearchBarProps> = ({ city, setCity }) => {
         </div>
       )}
       <div className="input-left-border"></div>
-      <div className="searchrestaurant">
+      <div className="search-restaurant">
         <Search className="search-icon" />
         <Input
           placeholder="Search restaurant"

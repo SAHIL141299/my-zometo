@@ -1,7 +1,7 @@
 
 import { combineReducers } from 'redux';
-import restaurantReducer from './restaurantReducer';
-import searchReducer from './searchReducer';
+import restaurantReducer from './RestaurantReducer';
+import searchReducer from './SearchReducer';
 
 
 const rootReducer = combineReducers<any>({

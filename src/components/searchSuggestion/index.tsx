@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { suggestionCard, suggestionCardImage } from "../../utils/styles/searchSuggestions";
-import SuggestionCards from "../suggestionCard/index";
+import { suggestionCard } from "../../Utils/Styles/SearchSuggestions";
+import { SuggestionCards } from '../ComponentIndex'
 
 interface Suggestion {
   id: string;
@@ -11,6 +11,7 @@ interface Suggestion {
   style: React.CSSProperties;
   categories?: string[];
   foodType?: string;
+  discription: number;
 }
 
 interface SearchSuggestionProps {

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import Navbar from "../../components/dashboard/index";
 import {
   FilterButtonContainer,
   filtercontainer,
-} from "../../utils/styles/filterbutton";
-import FilterButton from "../../components/filtersButton/index";
-import RestaurantCard from "../../components/restaurantCard/index";
+} from "../../Utils/Styles/FlterButton";
+import {
+  Navbar,
+  FilterButton,
+  RestaurantCard,
+} from "../../Components/ComponentIndex";
 
 const SearchResult = () => {
   const [filter, setFilter] = useState<string>("all");

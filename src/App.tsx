@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "./routes/layout";
+import Layout from "./Routes/Layout";
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallback from "./services/errorboundary";
+import { ErrorFallback } from "./Components/ComponentIndex";
 
 function App() {
   return (

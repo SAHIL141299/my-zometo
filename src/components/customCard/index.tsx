@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { NavLink } from "react-router-dom";
-import './restaurantCard.css';
+import './RestaurantCard.css';
 
 interface CustomCardProps {
   id: string | number;

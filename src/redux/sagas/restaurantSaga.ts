@@ -1,8 +1,7 @@
 import { call, put, takeLatest } from 'redux-saga/effects';
-import axios from 'axios';
-import { FETCH_RESTAURANTS_REQUEST } from '../actionTypes';
-import { fetchRestaurantsSuccess, fetchRestaurantsFailure } from '../actions/restaurantActions';
-import { fetchRestaurantDataApi } from '../../services/apis/api';
+import { FETCH_RESTAURANTS_REQUEST } from '../ActionTypes';
+import { fetchRestaurantsSuccess, fetchRestaurantsFailure } from '../Actions/RestaurantActions';
+import { fetchRestaurantDataApi } from '../../Services/Apis/Api';
 
 interface Restaurant {
   id: any;

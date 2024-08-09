@@ -1,8 +1,8 @@
 
 import { call, debounce, put, takeLatest } from 'redux-saga/effects';
-import { FETCH_SEARCH_REQUEST } from '../actionTypes';
-import { searchSuccess, searchFailure } from '../actions/searchActions';
-import { fetchSearchSuggestionApi } from '../../services/apis/api'
+import { FETCH_SEARCH_REQUEST } from '../ActionTypes';
+import { searchSuccess, searchFailure } from '../Actions/SearchActions';
+import { fetchSearchSuggestionApi } from '../../Services/Apis/Api'
 
 
 interface SearchAction {

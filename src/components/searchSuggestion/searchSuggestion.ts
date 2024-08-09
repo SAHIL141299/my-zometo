@@ -17,7 +17,7 @@ export interface suggestion {
   image4: string;
   items: dish[];
   location: string;
-  rating: number;
+  rating?: number;
   restaurantName: string;
 }
 

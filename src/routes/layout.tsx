@@ -1,10 +1,10 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./layout.css";
+import "./Layout.css";
 
-const Home = lazy(() => import("../pages/home/index"));
-const SearchResult = lazy(() => import("../pages/searchResult/index"));
-const RestaurantData = lazy(() => import("../pages/restaurantData/index"));
+const Home = lazy(() => import("../Pages/Home/Index"));
+const SearchResult = lazy(() => import("../Pages/SearchResult/Index"));
+const RestaurantData = lazy(() => import("../Pages/RestaurantData/Index"));
 
 const Layout = () => {
   const [showContent, setShowContent] = useState(false);

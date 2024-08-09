@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import dashboardBackgroud from "../../assets/images/deshboarBackground.avif";
-import ZometoText from "../../assets/images/Zometologo.avif";
-import "./home.css";
-import SearchBar from "../../components/findLocation/Index";
+import dashboardBackgroud from "../../Assets/Images/deshboarBackground.avif";
+import ZometoText from "../../Assets/Images/Zometologo.avif";
+import { SearchBar } from '../../Components/ComponentIndex'
+import "./Home.css";
 
 const Home: React.FC = () => {
   const [city, setCity] = useState<string>("");

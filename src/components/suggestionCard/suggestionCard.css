@@ -29,7 +29,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensure content is spaced evenly */
+    justify-content: space-between; 
 }
 
 .card-title {

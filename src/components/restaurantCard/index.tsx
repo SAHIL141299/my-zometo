@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRestaurantsRequest } from "../../redux/actions/restaurantActions";
-import CustomCard from "../customCard/index";
+import { fetchRestaurantsRequest } from "../../Redux/Actions/RestaurantActions";
+import { CustomCard } from "../ComponentIndex";
 
 interface data {
   id: number;
@@ -12,7 +12,7 @@ interface data {
   categories: string[];
   foodType: string;
   className?: string;
-  cardBodyClassName?: string; 
+  cardBodyClassName?: string;
 }
 
 interface RestaurantCardProps {
