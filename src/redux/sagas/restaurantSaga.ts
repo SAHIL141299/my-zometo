@@ -2,16 +2,8 @@ import { call, put, takeLatest } from 'redux-saga/effects';
 import { FETCH_RESTAURANTS_REQUEST } from '../ActionTypes';
 import { fetchRestaurantsSuccess, fetchRestaurantsFailure } from '../Actions/RestaurantActions';
 import { fetchRestaurantDataApi } from '../../Services/Apis/Api';
+import { FetchRestaurantsResponse } from './Sagas';
 
-interface Restaurant {
-  id: any;
-  name: any;
- 
-}
-
-interface FetchRestaurantsResponse {
-  data: Restaurant[];
-}
 
 function* fetchRestaurantsSaga() {
   try {

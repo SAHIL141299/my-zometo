@@ -1,11 +1,6 @@
 
 import { FETCH_SEARCH_REQUEST, FETCH_SEARCH_SUCCESS, FETCH_SEARCH_FAILURE } from '../ActionTypes';
-
-interface SearchState {
-  data: any[];
-  loading: boolean;
-  error: string | null;
-}
+import { SearchState } from './Reducer';
 
 const initialState: SearchState = {
   data: [],

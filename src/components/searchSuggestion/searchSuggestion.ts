@@ -26,3 +26,7 @@ export interface dish {
   name: string;
   price: number;
 }
+
+export interface SearchSuggestionProps {
+  suggestionsData: suggestion[];
+}

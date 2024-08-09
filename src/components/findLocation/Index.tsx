@@ -3,12 +3,10 @@ import { GeoAltFill, ChevronDown, Search } from "react-bootstrap-icons";
 import { useDispatch } from "react-redux";
 import { searchRequest } from "../../Redux/Actions/SearchActions";
 import { Input, SearchSuggestion, Location } from "../ComponentIndex";
+import { SearchBarProps } from "./FindLocation";
 import "./SearchBar.css";
 
-interface SearchBarProps {
-  city: string;
-  setCity: React.Dispatch<React.SetStateAction<string>>;
-}
+
 
 const SearchBar: FC<SearchBarProps> = ({ city, setCity }) => {
   const [showLocationCard, setShowLocationCard] = useState(false);

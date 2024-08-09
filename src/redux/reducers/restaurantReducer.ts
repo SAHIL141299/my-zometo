@@ -1,11 +1,7 @@
 
 import { FETCH_RESTAURANTS_REQUEST, FETCH_RESTAURANTS_SUCCESS, FETCH_RESTAURANTS_FAILURE } from '../ActionTypes';
+import { RestaurantState } from './Reducer';
 
-interface RestaurantState {
-  data: any[];
-  loading: boolean;
-  error: any;
-}
 
 const initialState: RestaurantState = {
   data: [],

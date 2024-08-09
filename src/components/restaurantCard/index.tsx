@@ -2,22 +2,8 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRestaurantsRequest } from "../../Redux/Actions/RestaurantActions";
 import { CustomCard } from "../ComponentIndex";
+import { RestaurantCardProps, data } from "./Card";
 
-interface data {
-  id: number;
-  restaurantName: string;
-  description: string;
-  image: string;
-  rating: string;
-  categories: string[];
-  foodType: string;
-  className?: string;
-  cardBodyClassName?: string;
-}
-
-interface RestaurantCardProps {
-  filter: string;
-}
 
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ filter }) => {
   const dispatch = useDispatch();
@@ -45,7 +31,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ filter }) => {
           id={restaurant.id}
           image={restaurant.image}
           title={restaurant.restaurantName}
-          description={restaurant.rating}
+          description={restaurant.rating.toString()}
           categories={restaurant.categories}
           foodType={restaurant.foodType}
           linkTo={`/restaurant/${restaurant.id}`}

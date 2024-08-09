@@ -2,16 +2,9 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { NavLink } from "react-router-dom";
 import './SuggestionCard.css'; 
+import { SuggestionCardProps } from "./SuggestionCard";
 
-interface SuggestionCardProps {
-  id: string;
-  image: string;
-  title: string;
-  description: string;
-  categories?: string[];
-  foodType?: string;
-  linkTo: string;
-}
+
 
 const SuggestionCards: React.FC<SuggestionCardProps> = ({
   id,

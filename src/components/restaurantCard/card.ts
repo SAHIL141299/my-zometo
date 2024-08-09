@@ -21,3 +21,7 @@ export interface dish {
   name: string;
   price: number;
 }
+
+export interface RestaurantCardProps {
+  filter: string;
+}

@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  FilterButtonContainer,
-  filtercontainer,
-} from "../../Utils/Styles/FlterButton";
-import {
-  Navbar,
-  FilterButton,
-  RestaurantCard,
-} from "../../Components/ComponentIndex";
+import { FilterButtonGroup, Navbar, RestaurantCard } from "../../Components/ComponentIndex";
 
 const SearchResult = () => {
   const [filter, setFilter] = useState<string>("all");
@@ -19,21 +11,13 @@ const SearchResult = () => {
   return (
     <>
       <Navbar />
-      <div style={filtercontainer()}>
-        {["all", "veg", "non-veg"].map((filterType) => (
-          <FilterButton
-            key={filterType}
-            label={filterType.charAt(0).toUpperCase() + filterType.slice(1)}
-            style={FilterButtonContainer({
-              isHovered: hoveredButton === filterType,
-              isActive: filter === filterType,
-            })}
-            onMouseEnter={() => handleMouseEnter(filterType)}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => setFilter(filterType)}
-          />
-        ))}
-      </div>
+      <FilterButtonGroup
+        filter={filter}
+        hoveredButton={hoveredButton}
+        onFilterChange={setFilter}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      />
       <RestaurantCard filter={filter} />
     </>
   );

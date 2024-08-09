@@ -1,33 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { fetchRestaurantsRequest } from "../../Redux/Actions/RestaurantActions";
 import { Navbar } from "../../Components/ComponentIndex";
+import { data } from "./RestaurantData";
 import "./RestaurantData.css";
-
-interface Item {
-  name: string;
-  description: string;
-  price: number;
-}
-
-interface data {
-  id: number;
-  restaurantName: string;
-  description: string;
-  image: string;
-  image2: string;
-  image3: string;
-  image4: string;
-  rating: string;
-  categories: string[];
-  foodType: string;
-  items: Item[];
-}
 
 const RestaurantDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const [city, setCity] = useState<string>(" ");
   const dispatch = useDispatch();
 
   const restaurantData = useSelector(

@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 
 const SEARCH_BASE_API_URL = "http://192.168.1.32:5500";
 const SEARCH_API_ENDPOINTS = {

@@ -2,22 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { NavLink } from "react-router-dom";
 import './RestaurantCard.css';
-
-interface CustomCardProps {
-  id: string | number;
-  image: string;
-  title: string;
-  description: string;
-  categories?: string[];
-  foodType?: string;
-  linkTo: string;
-  style?: React.CSSProperties ;
- 
-}
-
+import { CustomCardProps } from './CustomCard';
 
 const CustomCard: React.FC<CustomCardProps> = ({
-  id,
+  id, 
   image,
   title,
   description,

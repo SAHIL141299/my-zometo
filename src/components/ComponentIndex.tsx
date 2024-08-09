@@ -7,5 +7,6 @@ export { default as SuggestionCards } from "./SuggestionCard/Index";
 export { default as Navbar } from "./Dashboard/Index";
 export { default as FilterButton } from "./FiltersButton/Index";
 export { default as RestaurantCard } from "./RestaurantCard/Index";
+export { default as FilterButtonGroup } from "../Components/FilterButtonGroup/Index"
 export { default as ErrorFallback } from "../Services/Errorboundary/Index";
 export { default as Layout } from "../Routes/Layout";

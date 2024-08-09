@@ -1,14 +1,7 @@
-
-import { call, debounce, put, takeLatest } from 'redux-saga/effects';
+import { call, debounce, put } from 'redux-saga/effects';
 import { FETCH_SEARCH_REQUEST } from '../ActionTypes';
 import { searchSuccess, searchFailure } from '../Actions/SearchActions';
 import { fetchSearchSuggestionApi } from '../../Services/Apis/Api'
-
-
-interface SearchAction {
-  type: typeof FETCH_SEARCH_REQUEST;
-  payload: string;
-}
 
 function* searchSaga(action:any):any {
   try {
