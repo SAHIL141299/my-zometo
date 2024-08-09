@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import dashboardBackgroud from '../../assets/images/deshboarBackground.avif';
-import ZometoText from '../../assets/images/Zometologo.avif';
-import './home.css';
-import SearchBar from '../../components/search-location/Index'; // Adjust the path as needed
+import React, { useState } from "react";
+import dashboardBackgroud from "../../Assets/Images/deshboarBackground.avif";
+import ZometoText from "../../Assets/Images/Zometologo.avif";
+import { SearchBar } from '../../Components/ComponentIndex'
+import "./Home.css";
 
-const Index: React.FC = () => {
-  const [city, setCity] = useState<string>('');
+const Home: React.FC = () => {
+  const [city, setCity] = useState<string>("");
 
   return (
     <div>
@@ -17,7 +17,7 @@ const Index: React.FC = () => {
       />
       <div className="content-wrapper">
         <div>
-          <img src={ZometoText} alt="Zometo Logo" className="Zometo" />
+          <img src={ZometoText} alt="Zometo Logo" className="Zometo" loading="lazy" />
         </div>
         <div className="sloggen">
           <h1>Discover the best food & drinks in {city}</h1>
@@ -30,4 +30,4 @@ const Index: React.FC = () => {
   );
 };
 
-export default Index;
+export default Home;
