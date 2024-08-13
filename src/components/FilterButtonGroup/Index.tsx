@@ -4,7 +4,6 @@ import { FilterButton } from "../../Components/ComponentIndex";
 import { FilterButtonGroupProps } from "./FilterButtonGroup";
 import { FILTER_TYPES } from "../../Utils/FilterButtonTypes/Index";
 
-
 const FilterButtonGroup: React.FC<FilterButtonGroupProps> = ({
   filter,
   hoveredButton,
@@ -30,5 +29,4 @@ const FilterButtonGroup: React.FC<FilterButtonGroupProps> = ({
     </div>
   );
 };
-
 export default FilterButtonGroup;

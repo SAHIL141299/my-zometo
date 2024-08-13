@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom";
 import './SuggestionCard.css'; 
 import { SuggestionCardProps } from "./SuggestionCard";
 
-
-
 const SuggestionCards: React.FC<SuggestionCardProps> = ({
   id,
   image,
@@ -35,5 +33,4 @@ const SuggestionCards: React.FC<SuggestionCardProps> = ({
     </NavLink>
   );
 };
-
 export default SuggestionCards;

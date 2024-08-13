@@ -21,7 +21,6 @@ const RestaurantDetail: React.FC = () => {
       dispatch(fetchRestaurantsRequest());
     }
   }, [dispatch, restaurantData]);
-
   return (
     <>
       <Navbar />
@@ -95,5 +94,4 @@ const RestaurantDetail: React.FC = () => {
     </>
   );
 };
-
 export default RestaurantDetail;
