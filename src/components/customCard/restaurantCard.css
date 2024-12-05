@@ -1,0 +1,38 @@
+.custom-card {
+  width: 18rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.custom-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.3s ease;
+}
+
+.custom-card .left-align {
+  text-align: left;
+}
+
+.custom-card .right-align {
+  text-align: right;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 5rem;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card:hover .custom-card img {
+  opacity: 0.9;
+}

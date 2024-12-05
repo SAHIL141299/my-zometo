@@ -1,4 +1,4 @@
-import { FETCH_RESTAURANTS_REQUEST, FETCH_RESTAURANTS_SUCCESS, FETCH_RESTAURANTS_FAILURE } from '../actions/actionTypes';
+import { FETCH_RESTAURANTS_REQUEST, FETCH_RESTAURANTS_SUCCESS, FETCH_RESTAURANTS_FAILURE } from '../ActionTypes';
 
 export const fetchRestaurantsRequest = () => ({
   type: FETCH_RESTAURANTS_REQUEST,
@@ -13,3 +13,7 @@ export const fetchRestaurantsFailure = (error: string) => ({
   type: FETCH_RESTAURANTS_FAILURE,
   payload: error,
 });
+
+
+
+

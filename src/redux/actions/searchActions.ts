@@ -1,5 +1,5 @@
 
-import { FETCH_SEARCH_REQUEST, FETCH_SEARCH_SUCCESS, FETCH_SEARCH_FAILURE } from './actionTypes';
+import { FETCH_SEARCH_REQUEST, FETCH_SEARCH_SUCCESS, FETCH_SEARCH_FAILURE } from '../ActionTypes';
 
 export const searchRequest = (query: string) => ({
   type: FETCH_SEARCH_REQUEST,

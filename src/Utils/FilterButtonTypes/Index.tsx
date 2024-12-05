@@ -1,0 +1,1 @@
+export const FILTER_TYPES = ["all", "veg", "non-veg"] as const;
